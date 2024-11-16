@@ -4,7 +4,7 @@
 This project demonstrates a simple DNS server implementation using Node.js. It handles DNS queries and resolves them to appropriate IP addresses.
 
 ## Features:
-- Handles DNS A, AAAA, MX, TXT, and CNAME record queries (or any other record types your server supports).
+- Handles DNS A, AAAA, MX, TXT, and CNAME record queries.
 - Supports basic DNS functionality.
 - Easy to deploy and customize.
 
