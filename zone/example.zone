@@ -1,0 +1,36 @@
+$TTL 86400
+@   IN  SOA ns1.example.com. admin.example.com. (
+        2024111601 ; Serial (YYYYMMDDnn)
+        3600       ; Refresh (1 hour)
+        1800       ; Retry (30 minutes)
+        1209600    ; Expire (2 weeks)
+        86400 )    ; Minimum TTL (1 day)
+
+; Nameserver records
+    IN  NS    ns1.example.com.
+    IN  NS    ns2.example.com.
+
+; A Records
+ns1 IN  A   192.0.2.1
+ns2 IN  A   192.0.2.2
+www IN  A   192.0.2.3
+@   IN  A   192.0.2.4
+
+; CNAME Records
+ftp IN  CNAME www.example.com.
+mail IN CNAME mail.example.com.
+
+; MX Records
+@   IN  MX  10 mail.example.com.
+
+; TXT Records
+@   IN  TXT "v=spf1 ip4:192.0.2.4 -all"
+
+; PTR Records (reverse DNS lookup)
+1.2.0.192.in-addr.arpa. IN PTR example.com.
+
+; Additional A record for subdomain
+blog    IN  A   192.0.2.5
+
+; AAAA Records for IPv6 (optional)
+@   IN  AAAA  2001:0db8:85a3:0000:0000:8a2e:0370:7334
