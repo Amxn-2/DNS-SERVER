@@ -43,3 +43,7 @@ dig @127.0.0.1 example.com
 ### License:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+### Resources:
+ - [Medium Article](https://medium.com/@amansharmaa1205/8ed54d17b3d1)
+ - [RFC 1034](https://datatracker.ietf.org/doc/html/rfc1034)
+ - [RFC 1035](https://datatracker.ietf.org/doc/html/rfc1035)
